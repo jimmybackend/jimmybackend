@@ -1,39 +1,42 @@
 # Jimmy Backend
 
-### Backend Developer · PHP · MySQL/PostgreSQL · APIs · AWS · Linux · AI Systems
+### Backend Developer · PHP · Databases · AWS · Linux · AI Systems
 
-I build, troubleshoot and modernize backend applications, deploy cloud infrastructure, and develop AI-assisted systems with persistent memory, RAG, agents and operational traceability.
+I am a backend developer with a computing journey that began around 1990 and has evolved across desktop software, databases, web platforms, Linux servers, cloud infrastructure and applied artificial intelligence.
 
-My freelance focus is intentionally layered:
+Today I focus on solving practical backend problems: **maintaining and modernizing PHP systems, working with relational databases, building APIs, deploying on AWS/Linux, and integrating AI when it provides real value.**
 
-**1. PHP / Databases / Backend → 2. AWS / Linux / Cloud → 3. AI Integration & Automation**
+**Freelance focus:** PHP & Backend → AWS & Linux → AI Integration & Automation
 
 📧 **jimmybackend@gmail.com**
 
 ---
 
-## Services
+## What I can help you with
 
-### 1 · PHP, Databases & Backend — Primary freelance focus
+### 1 · PHP, Databases & Backend
 
-I can help with existing applications as well as new backend components:
+My primary freelance service area.
 
 - PHP troubleshooting, maintenance and backend development
-- MySQL / PostgreSQL and PDO
-- REST APIs and service integrations
+- MySQL / PostgreSQL / PDO
+- REST APIs and third-party integrations
 - Debugging across application, database and server layers
 - Authentication and authorization flows
 - Refactoring and modernization of existing systems
-- Multi-tenant application architecture
+- Multi-tenant backend architecture
 - API-token based integrations
 - Security-minded backend implementation
 
-I prefer to diagnose the real cause of a problem and make the smallest reliable change rather than unnecessarily rebuilding a working system.
+I have worked with PHP since approximately **2006**, from educational web platforms to current cloud-connected backend and AI systems.
+
+I prefer to understand an existing system before changing it: reproduce the problem, trace the real cause, implement the smallest reliable solution, validate it and document what matters.
 
 ### 2 · AWS, Linux & Cloud Infrastructure
 
 - AWS EC2 deployment and administration
 - Amazon S3 application integration
+- Amazon Bedrock integration
 - Linux server administration
 - Nginx + PHP-FPM
 - SSL/TLS and HTTPS
@@ -41,7 +44,7 @@ I prefer to diagnose the real cause of a problem and make the smallest reliable 
 - PostgreSQL / MySQL production environments
 - Cloud troubleshooting and deployment hardening
 
-I work across the application/server boundary, which is particularly useful when a PHP problem is actually caused by configuration, permissions, networking, storage or infrastructure.
+My background includes both software and infrastructure, so I am comfortable tracing a backend problem beyond the PHP code when the actual cause is configuration, permissions, networking, storage or deployment.
 
 ### 3 · AI Integration, Automation & Applied R&D
 
@@ -55,7 +58,7 @@ I work across the application/server boundary, which is particularly useful when
 - Token/cost tracking
 - Workflow automation
 
-I treat AI as an engineering component: models, memory, retrieval, tools, permissions, state and observability should work together as a system.
+I approach AI as a software-engineering problem: models, memory, retrieval, tools, permissions, persistent state and observability should work together as a reliable system.
 
 ---
 
@@ -63,38 +66,61 @@ I treat AI as an engineering component: models, memory, retrieval, tools, permis
 
 ### 🧠 [MiChat — AI Memory & Trace Platform](https://github.com/jimmybackend/michat)
 
-My strongest public AI/backend project. Built primarily with **PHP, JavaScript and MySQL** and integrated with **Amazon Bedrock and Amazon S3**.
+My strongest public AI/backend project, built primarily with **PHP, JavaScript and MySQL**, with integrations including **Amazon Bedrock and Amazon S3**.
 
-The platform includes persistent session/project/procedural memory, semantic embeddings, project and attachment RAG, context routing and ranking, configurable AI agents, a fault-tolerant prompt compiler, memory writing, execution traces, 2D/3D execution graphs, file/tool operations, token and cost observability, and a persistent Task Orchestrator with human-in-the-loop controls.
+MiChat explores persistent session/project/procedural memory, semantic embeddings, RAG, context routing and ranking, configurable AI agents, fault-tolerant prompt compilation, memory writing, execution traces, 2D/3D execution graphs, tool/file operations, token and cost observability, and persistent task orchestration with human-in-the-loop controls.
 
-This project demonstrates backend architecture, relational data modeling, AWS integration and applied AI engineering in one system.
+The 2D/3D visualization work also connects with a long-standing interest in software modeling that goes back to my academic work with **UML (Unified Modeling Language)**.
 
 ### 🏗️ [Ecosistema Esforzados — Public Architecture & Product Documentation](https://github.com/jimmybackend/Ecosistema-presentacion)
 
 Public technical/product presentation for a modular business platform covering operational workflows, CRM-oriented processes, automation, reporting, security/privacy and supervised AI capabilities.
 
-The public repository deliberately separates presentation/documentation from private production code and documents functionality using explicit states such as available, partial, read-only, dry-run, controlled and roadmap.
+Its public documentation is intentionally separated from private production repositories and communicates capabilities using explicit operational states instead of presenting roadmap functionality as finished software.
 
 ### 🧩 Private multi-tenant API & Core Admin architecture
 
-I also maintain private production-oriented repositories that are intentionally not exposed as source code. They include a modular API/Core Admin architecture using **PHP, PostgreSQL, API tokens, tenant isolation, deployment runbooks, security controls and API-only client design**.
+I maintain private production-oriented work around a modular API/Core Admin architecture using **PHP, PostgreSQL, API tokens, tenant isolation, deployment runbooks, security controls and API-only client design**.
 
-The architecture separates a central API/data layer from downloadable clients so database credentials and direct database access are not distributed to clients.
+The design separates the central API/data layer from downloadable clients so database credentials and direct database access do not need to be distributed to those clients.
 
 ### ☁️ Private AWS file platform
 
-A private cloud-file application integrates PHP with AWS services including **Amazon S3** and additional file-processing capabilities. It covers storage workflows, file operations, security controls and cloud-backed application integration.
+I also maintain private cloud-file work integrating PHP with AWS storage and processing services, including **Amazon S3**, file workflows, access/security controls and cloud-backed application operations.
 
-Private repositories are referenced only at capability level; source code, credentials and internal operational details remain private.
+Private projects are referenced here only at capability level. Source code, credentials and internal operational details remain private.
+
+---
+
+## Engineering background
+
+My path into backend and cloud engineering spans several generations of computing.
+
+**Early development**  
+Borland C++ → Delphi → Paradox → Java/NetBeans → PHP
+
+**Database journey**  
+Paradox → MySQL → Oracle exposure in institutional/academic practice → PostgreSQL
+
+**Web & backend**  
+Around 2006 I began using PHP professionally while providing professional services for an educational organization in Chiapas, including work on a virtual-school platform serving a multi-campus environment. PHP became the practical path for delivering web applications with infrastructure that was economically sustainable for the project.
+
+**Systems & infrastructure**  
+Earlier work included computer repair, installation and networking. Over time that infrastructure background evolved into Linux server administration, web-server deployment and eventually AWS cloud environments.
+
+**Software modeling**  
+My academic background includes work with UML and software-system modeling. That interest continues today in the way I visualize execution, relationships, memory and traceability inside AI systems such as MiChat.
+
+I have continued learning as technologies changed rather than tying my work to one language or platform.
 
 ---
 
 ## Additional public projects
 
+- **[VitaOS](https://github.com/jimmybackend/VitaOS)** — experimental modular software architecture and a future integration environment for intelligent components.
 - **[AutoPHP](https://github.com/jimmybackend/autophp)** — PHP-focused development/automation project.
 - **[FileEncrypTech](https://github.com/jimmybackend/FileEncrypTech)** — file encryption implementation and experimentation.
 - **[GestorDB](https://github.com/jimmybackend/GestorDB)** — database-oriented development project.
-- **[VitaOS](https://github.com/jimmybackend/VitaOS)** — experimental modular software architecture.
 - **[RTCloud](https://github.com/jimmybackend/RTCloud)** / **[RTCore](https://github.com/jimmybackend/RTCore)** / **[RTCrypt](https://github.com/jimmybackend/RTCrypt)** — components from the RT experimental ecosystem.
 
 ---
@@ -113,9 +139,12 @@ LLMs · RAG · Embeddings · Semantic Retrieval · Persistent Memory · AI Agent
 **Engineering & Operations**  
 Git · GitHub · Bash · API Integration · Debugging · Deployment · Observability · Security-minded design
 
+**Previous technologies / background**  
+Borland C++ · Delphi · Paradox · Java/NetBeans · Oracle exposure · UML · Computer networking
+
 ---
 
-## How I approach a technical problem
+## How I work
 
 1. **Reproduce** the issue and establish what is actually failing.
 2. **Trace** it through code, database, APIs and infrastructure as needed.
@@ -123,11 +152,11 @@ Git · GitHub · Bash · API Integration · Debugging · Deployment · Observabi
 4. **Implement the smallest reliable fix** compatible with the existing system.
 5. **Validate and document** the result.
 
-For larger systems, I prefer incremental architecture: make the backend reliable first, establish secure infrastructure second, then add automation or AI where it provides measurable value.
+For larger systems, I prefer incremental architecture: establish a reliable backend first, provide secure infrastructure second, then introduce automation or AI where it makes sense.
 
 ---
 
-## Available for
+## Available for freelance work
 
 - PHP/MySQL/PostgreSQL troubleshooting
 - Backend maintenance and development
