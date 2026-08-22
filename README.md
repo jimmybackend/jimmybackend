@@ -60,6 +60,8 @@ My background includes both software and infrastructure, so I am comfortable tra
 
 I approach AI as a software-engineering problem: models, memory, retrieval, tools, permissions, persistent state and observability should work together as a reliable system.
 
+My work with automation predates modern generative AI. Earlier projects used database metadata and deterministic rules to generate or adapt application behavior. Working with the first generations of coding assistants reinforced an important engineering principle that I still apply to agents today: **greater automation requires stronger validation, observability and control.**
+
 ---
 
 ## Featured engineering work
@@ -71,6 +73,20 @@ My strongest public AI/backend project, built primarily with **PHP, JavaScript a
 MiChat explores persistent session/project/procedural memory, semantic embeddings, RAG, context routing and ranking, configurable AI agents, fault-tolerant prompt compilation, memory writing, execution traces, 2D/3D execution graphs, tool/file operations, token and cost observability, and persistent task orchestration with human-in-the-loop controls.
 
 The 2D/3D visualization work also connects with a long-standing interest in software modeling that goes back to my academic work with **UML (Unified Modeling Language)**.
+
+### ⚙️ [GestorDB — Schema-aware Automatic CRUD](https://github.com/jimmybackend/GestorDB)
+
+An experimental PHP/MySQL system that inspects database schemas and uses metadata and naming conventions to derive reusable CRUD behavior, dynamic views, relationships and master/detail structures.
+
+GestorDB also represents an important stage in my adoption of **AI-assisted software development**: using AI to accelerate implementation while validating generated SQL, data types and runtime behavior against the real database rather than assuming generated code is correct.
+
+### 🧬 [AutoPHP — Schema-driven PHP Code Generation](https://github.com/jimmybackend/autophp)
+
+An earlier automation project that introspects MySQL structures and uses deterministic rules to generate PHP/HTML/SQL CRUD application code. AutoPHP documents an engineering interest that predates LLMs: reducing repetitive development by deriving software from structured metadata.
+
+### 📬 [RealTimePriceMailer — Dynamic Email Content Experiment](https://github.com/jimmybackend/RealTimePriceMailer)
+
+A PHP/MySQL experiment in server-rendered dynamic email content. Instead of fixing a price at send time, an email references a remotely generated image whose value is rendered from current server-side data when the mail client requests the resource. The repository is preserved as a historical marketing-technology experiment and documents the limitations of modern email caching, proxies and privacy protections.
 
 ### 🏗️ [Ecosistema Esforzados — Public Architecture & Product Documentation](https://github.com/jimmybackend/Ecosistema-presentacion)
 
@@ -89,6 +105,82 @@ The design separates the central API/data layer from downloadable clients so dat
 I also maintain private cloud-file work integrating PHP with AWS storage and processing services, including **Amazon S3**, file workflows, access/security controls and cloud-backed application operations.
 
 Private projects are referenced here only at capability level. Source code, credentials and internal operational details remain private.
+
+---
+
+## Experimental systems R&D · VitaOS & RT Stack
+
+Alongside production-oriented backend/cloud work, I maintain a longer-term experimental systems track.
+
+### [VitaOS](https://github.com/jimmybackend/VitaOS)
+
+VitaOS is an experimental modular software architecture intended as a future integration environment for intelligent components. Its long-term direction includes combining local/system capabilities with AI software such as MiChat and other components developed across my research projects.
+
+The broader vision includes future personal embodied/robotic computing experiments. This is **R&D and roadmap work**, not a claim of a completed operating system or finished robotics platform.
+
+### RT Stack
+
+The RT repositories are not isolated demos; together they explore a modular data, media, transport, storage and security infrastructure that can support future VitaOS-class systems.
+
+- **[RTVox](https://github.com/jimmybackend/RTVox)** — real-time voice codec research with encoder/decoder prototypes.
+- **[RTImg](https://github.com/jimmybackend/RTImg)** — native image format/codec work with binary representation, integrity and tile-oriented processing.
+- **[RTVid](https://github.com/jimmybackend/RTVid)** — experimental native video codec and controlled encode/reconstruction pipeline.
+- **[RTPack](https://github.com/jimmybackend/RTPack)** — binary archive/container format with integrity, optional compression and chunking foundations.
+- **[RTMeta](https://github.com/jimmybackend/RTMeta)** — common metadata schemas for RT media, packages, sessions and cloud objects.
+- **[RTCore](https://github.com/jimmybackend/RTCore)** — internal portable container that packages, indexes, relates and validates heterogeneous RT assets. Its current v0.1 includes a binary specification, Python implementation, CLI and roundtrip tests.
+- **[RTStream](https://github.com/jimmybackend/RTStream)** — internal transport/framing layer for multiplexed media, files, metadata and control messages.
+- **[RTCloud](https://github.com/jimmybackend/RTCloud)** — content-addressed cloud/storage layer exploring chunks, hashes, manifests, versions, snapshots, synchronization and recovery.
+- **[RTCrypt](https://github.com/jimmybackend/RTCrypt)** — security layer designed around established cryptographic/authentication standards rather than custom cryptography.
+
+Conceptually, the direction is:
+
+```text
+Media / Files / Metadata
+        │
+        ├── RTVox · RTVid · RTImg · RTPack · RTMeta
+        │
+        ▼
+      RTCore
+        │
+        ├── RTStream
+        ├── RTCloud
+        └── RTCrypt
+        │
+        ▼
+ Future VitaOS integration
+        │
+        └── AI / MiChat / intelligent components
+```
+
+These repositories are at different stages of maturity. I keep the distinction explicit between **working prototypes, specifications and long-term architecture**.
+
+---
+
+## Engineering evolution
+
+Several of my projects form a continuous automation path rather than unrelated experiments:
+
+```text
+AutoPHP
+Schema → deterministic rules → generated application code
+
+        ↓
+
+GestorDB
+Schema → introspection → reusable dynamic CRUD + AI-assisted iteration
+
+        ↓
+
+MiChat
+Context → retrieval + memory + agents → observable AI execution
+
+        ↓
+
+VitaOS / RT Stack (R&D direction)
+AI + software + media/data infrastructure → integrated intelligent systems
+```
+
+The technology changes, but the recurring engineering question remains similar: **how can software use structure and context to perform useful work while remaining observable, testable and controllable?**
 
 ---
 
@@ -115,13 +207,10 @@ I have continued learning as technologies changed rather than tying my work to o
 
 ---
 
-## Additional public projects
+## Additional public work
 
-- **[VitaOS](https://github.com/jimmybackend/VitaOS)** — experimental modular software architecture and a future integration environment for intelligent components.
-- **[AutoPHP](https://github.com/jimmybackend/autophp)** — PHP-focused development/automation project.
 - **[FileEncrypTech](https://github.com/jimmybackend/FileEncrypTech)** — file encryption implementation and experimentation.
-- **[GestorDB](https://github.com/jimmybackend/GestorDB)** — database-oriented development project.
-- **[RTCloud](https://github.com/jimmybackend/RTCloud)** / **[RTCore](https://github.com/jimmybackend/RTCore)** / **[RTCrypt](https://github.com/jimmybackend/RTCrypt)** — components from the RT experimental ecosystem.
+- Additional repositories preserve experiments and intermediate stages of larger ideas; mature capabilities are documented above rather than presenting every repository as production software.
 
 ---
 
@@ -135,6 +224,9 @@ AWS · EC2 · S3 · Bedrock · Linux · Nginx · PHP-FPM · SSL/TLS
 
 **AI Engineering**  
 LLMs · RAG · Embeddings · Semantic Retrieval · Persistent Memory · AI Agents · Task Orchestration · HITL
+
+**Systems R&D**  
+Binary formats · Codecs · Containers · Metadata schemas · Content-addressed storage · Streaming concepts · Cross-language prototyping
 
 **Engineering & Operations**  
 Git · GitHub · Bash · API Integration · Debugging · Deployment · Observability · Security-minded design
@@ -152,11 +244,15 @@ Borland C++ · Delphi · Paradox · Java/NetBeans · Oracle exposure · UML · C
 4. **Implement the smallest reliable fix** compatible with the existing system.
 5. **Validate and document** the result.
 
+My experience with early AI coding tools made validation especially important to me. Generated code can look plausible while still being wrong at the SQL, type, schema or runtime level. I increase autonomy gradually and pair it with tests, traces, permissions and human review appropriate to the risk.
+
 For larger systems, I prefer incremental architecture: establish a reliable backend first, provide secure infrastructure second, then introduce automation or AI where it makes sense.
 
 ---
 
 ## Available for freelance work
+
+My experimental R&D is separate from the services I offer clients. My current freelance focus remains practical and production-oriented:
 
 - PHP/MySQL/PostgreSQL troubleshooting
 - Backend maintenance and development
