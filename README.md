@@ -74,6 +74,14 @@ MiChat explores persistent session/project/procedural memory, semantic embedding
 
 The 2D/3D visualization work also connects with a long-standing interest in software modeling that goes back to my academic work with **UML (Unified Modeling Language)**.
 
+### 🔐 [MCMA-OpenMemory — Portable Encrypted AI Memory](https://github.com/jimmybackend/MCMA-OpenMemory)
+
+An **open-source, provider-agnostic memory architecture for AI systems and agents**. MCMA-OpenMemory is designed so long-lived AI memory can remain under user-controlled keys and move between storage providers without tying that memory to one model vendor or one cloud.
+
+The project defines portable encrypted `.mcma` envelopes, **AES-256-GCM**, **HKDF-SHA256**, encrypted memory indexes, selective retrieval, cognitive memory classification, a **Hot → Warm → Cold → Frozen** lifecycle, opaque memory identifiers and interchangeable storage adapters for local, Git, object storage, WebDAV, NAS and future cloud backends.
+
+Its current public repository includes the **v0.1 specification, architecture, security model, deployment guidance, roadmap and PHP reference implementation derived from a working MCMA V2 prototype**. The design also explores memory-first reuse of previously validated knowledge, provenance, confidence and revalidation metadata so an AI system can retrieve what it already knows before paying to rediscover the same answer.
+
 ### ⚙️ [GestorDB — Schema-aware Automatic CRUD](https://github.com/jimmybackend/GestorDB)
 
 An experimental PHP/MySQL system that inspects database schemas and uses metadata and naming conventions to derive reusable CRUD behavior, dynamic views, relationships and master/detail structures.
@@ -173,6 +181,11 @@ Schema → introspection → reusable dynamic CRUD + AI-assisted iteration
 
 MiChat
 Context → retrieval + memory + agents → observable AI execution
+
+        ↓
+
+MCMA-OpenMemory
+Persistent AI memory → encrypted portable knowledge + provider-independent continuity
 
         ↓
 
