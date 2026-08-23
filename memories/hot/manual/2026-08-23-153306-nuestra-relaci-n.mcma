@@ -1,0 +1,14 @@
+{
+    "format": "mcma-v2",
+    "cipher": "AES-256-GCM",
+    "kdf": "HKDF-SHA256",
+    "key_version": "mcma-key-v2",
+    "key_id": "7d10e07e559599c2",
+    "logical_path": "memories/hot/manual",
+    "file": "2026-08-23-153306-nuestra-relaci-n.mcma",
+    "temperature": "hot",
+    "created_at": "2026-08-23T15:33:06+00:00",
+    "iv_b64": "fkBWoeJP510PaL1Q",
+    "tag_b64": "5mK+XSZHWL4tY7F41HzOug==",
+    "ciphertext_b64": "sVMVChS8KqMX8tisvFIidWItsV5aobn6UYZ2Hg4moNbvcq0hZZAfVCDuHMPONAzOVmExL7BkkHeYgdCRqbSlwEkDmrr9ivqamrCPPcfw7EDvqOcTIujZgrd/AeEGqhkNFURzrGuCkVWiHvT7fCx8jM3M+ltHRa9HxIQARbwwxDjY0pRp/PTailsbWivqOMzOP0z25OvGHq7eJicKhDZQkxuwMGDbdtpgsXFa5nA92fnSfb3KoPmrtA01fjHBuElKzzlkd44QRNf3IH0sd8wkzFbMZvLAi4/E5QX04QsDAIOjyWucmYULgADkqEI9vkOZm6akyeD8UfOofeX0/erusLbnHzCob6kwRvM2406Emms9EVS6hEmxR7gxLKplPQS2yO14gX6XUqQTVK+8XSSoQgBON1kffYqFEKyZlpLDwljiVUh/jIp1EEmEXVhXDk0ctZra72d6zEHg8KUNX/eMQBE45kKpWkHBQNYOpbfk9nErTMO0qeqU/N89OwGwsilmeM2IeMVAQohh5HAlH9WBqgi2FVZzFIJgXaXmyrxxdKOd8cItxjJJCEHx2RK6CPxgcoxsl9fZw332PlUfb1Zthp1PVWZDrrjQ2yaJlAzQc+m4DEqi/2IyHCj9aVvWbKAHXZkHaZ/kx54k0z4RRaNLvgF/6d0JnKayg6hrKfKyOXwkA2RNXZnItgjObe7qzf934h2E1aFVsvn6sQip9loQxjOB6gG307tqcckWlEIZNzfdoXQpd4wKmAY1Quw="
+}
