@@ -66,6 +66,18 @@ My work with automation predates modern generative AI. Earlier projects used dat
 
 ## Featured engineering work
 
+### ☁️ [ArcadeCloud S3 — Stable Cloud Drive & Web OS](https://github.com/jimmybackend/s3)
+
+**Operational stable baseline published on October 13, 2026:** [`s3-stable-2026-10-13`](https://github.com/jimmybackend/s3/tree/s3-stable-2026-10-13) · [release documentation](https://github.com/jimmybackend/s3/blob/main/drive/docs/S3_STABLE_RELEASE_2026-10-13.md).
+
+ArcadeCloud S3 is a working PHP/JavaScript, AWS-backed file and application platform developed around **Amazon S3 storage, a Drive-style file manager, a web-desktop interface (`so.php`), an interactive 3D document library, background jobs and multimedia workflows**. It also integrates operational cost tracking, user-level AWS accounting, server administration and controlled update/deployment tooling.
+
+The running architecture uses **two Amazon Linux EC2 installations**: the smaller node hosts the primary Drive and MariaDB database; the larger FastDrive node adds processing capacity and shares that database. Nginx, PHP-FPM and Docker support the relevant workloads. **FederationCloud** assigns each node its own cryptographic identity and runs scheduled gossip synchronization. Following a production recovery and a sequence-counter regression fix, both nodes completed successful sync cycles; the large node reported a healthy peer connection to the small one. The privileged web updater was reconciled, and **24 AWS bridge tests passed**.
+
+This release represents a **validated operational baseline**, not a claim that every feature has been exhaustively audited: a fresh install from zero and a real transfer between *independent* federation databases remain separate integration-certification tasks. Because the deployed nodes share MariaDB, a successful peer check does not by itself prove cross-database event replication.
+
+Development continues on `main`; the [stable tag](https://github.com/jimmybackend/s3/tree/s3-stable-2026-10-13) and [frozen release branch](https://github.com/jimmybackend/s3/tree/release/s3-stable-2026-10-13) preserve the verified baseline.
+
 ### 🧠 [MiChat — AI Memory & Trace Platform](https://github.com/jimmybackend/michat)
 
 My strongest public AI/backend project, built primarily with **PHP, JavaScript and MySQL**, with integrations including **Amazon Bedrock and Amazon S3**.
@@ -108,11 +120,7 @@ I maintain private production-oriented work around a modular API/Core Admin arch
 
 The design separates the central API/data layer from downloadable clients so database credentials and direct database access do not need to be distributed to those clients.
 
-### ☁️ Private AWS file platform
-
-I also maintain private cloud-file work integrating PHP with AWS storage and processing services, including **Amazon S3**, file workflows, access/security controls and cloud-backed application operations.
-
-Private projects are referenced here only at capability level. Source code, credentials and internal operational details remain private.
+Private projects in this profile are described only at the capability level. The **ArcadeCloud S3** platform above is now linked to its public repository and stable source-code baseline; credentials, production configuration and private operational secrets remain outside GitHub.
 
 ---
 
